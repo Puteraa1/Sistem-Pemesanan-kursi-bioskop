@@ -1,0 +1,48 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+#screen {
+  background-color: #00f7ff;
+  color : white;
+  padding: 10px;
+  margin: 50px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+#seating-chart {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(21, 1fr); */
+  gap: 8px;
+  justify-content: center;
+}
+
+.seat {
+  width: 50px;
+  height: 50px;
+  background-color: #233efe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.seat.push{
+  background-color: white;
+}
+
+.seat.selected {
+  background-color: #ff5722;
+}
+
+.seat.taken {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
